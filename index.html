@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udi Shopping – Shopping Digital de Uberlândia</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 50%, #388e3c 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: #fff;
+      max-width: 540px;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+      overflow: hidden;
+    }
+    .hero {
+      background: linear-gradient(135deg, #2e7d32, #43a047);
+      padding: 48px 32px 40px;
+      text-align: center;
+      color: #fff;
+    }
+    .logo-icon {
+      width: 80px;
+      height: 80px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      margin: 0 auto 20px;
+      backdrop-filter: blur(10px);
+    }
+    .hero h1 {
+      font-size: 2em;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .hero p {
+      font-size: 1em;
+      opacity: 0.85;
+      line-height: 1.5;
+    }
+    .body {
+      padding: 36px 32px 40px;
+    }
+    .desc {
+      color: #555;
+      font-size: 0.95em;
+      line-height: 1.7;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 0.97em;
+      font-weight: 600;
+      transition: transform 0.15s, box-shadow 0.15s;
+      border: 2px solid transparent;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+    .btn-primary {
+      background: #e8f5e9;
+      color: #1b5e20;
+      border-color: #c8e6c9;
+    }
+    .btn-secondary {
+      background: #f3f4f6;
+      color: #374151;
+      border-color: #e5e7eb;
+    }
+    .btn-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .btn-primary .btn-icon { background: #c8e6c9; }
+    .btn-secondary .btn-icon { background: #e5e7eb; }
+    .btn-text small {
+      display: block;
+      font-weight: 400;
+      color: #888;
+      font-size: 0.82em;
+      margin-top: 2px;
+    }
+    .btn-primary .btn-text small { color: #558b2f; }
+    .divider {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin-bottom: 24px;
+    }
+    .play-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #888;
+      font-size: 0.87em;
+      text-align: center;
+    }
+    .play-badge a {
+      color: #2e7d32;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .play-badge a:hover { text-decoration: underline; }
+    .footer {
+      background: #f9fafb;
+      padding: 18px 32px;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.8em;
+      border-top: 1px solid #e5e7eb;
+    }
+    @media (max-width: 480px) {
+      .hero { padding: 36px 20px 32px; }
+      .body { padding: 28px 20px 32px; }
+      .hero h1 { font-size: 1.6em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="hero">
+      <div class="logo-icon">🛒</div>
+      <h1>Udi Shopping</h1>
+      <p>Shopping Digital de Uberlândia<br>Compre local, apoie o comércio da sua cidade</p>
+    </div>
+
+    <div class="body">
+      <p class="desc">
+        Aplicativo gratuito que conecta consumidores aos melhores lojistas de Uberlândia e região. Encontre produtos por geolocalização, converse com lojistas e acompanhe seus pedidos.
+      </p>
+
+      <div class="btn-group">
+        <a href="/politica-de-privacidade.html" class="btn btn-primary">
+          <div class="btn-icon">🔒</div>
+          <div class="btn-text">
+            Política de Privacidade
+            <small>Como tratamos seus dados pessoais (LGPD)</small>
+          </div>
+        </a>
+        <a href="/termos-de-uso.html" class="btn btn-secondary">
+          <div class="btn-icon">📄</div>
+          <div class="btn-text">
+            Termos de Uso
+            <small>Regras e condições de uso da plataforma</small>
+          </div>
+        </a>
+      </div>
+
+      <hr class="divider">
+
+      <div class="play-badge">
+        <span>📱</span>
+        <span>Disponível na <a href="https://play.google.com/store" target="_blank" rel="noopener">Google Play Store</a></span>
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2026 Udi Shopping – Local Udi, Uberlândia – MG<br>
+      contato@udishopping.com.br
+    </div>
+  </div>
+</body>
+</html>
